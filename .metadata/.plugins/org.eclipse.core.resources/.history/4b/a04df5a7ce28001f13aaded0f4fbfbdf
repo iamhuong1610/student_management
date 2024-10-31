@@ -1,0 +1,69 @@
+package DAO;
+
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import Model.Grade;
+import Model.LopHPSV;
+
+public class GradeDAO extends Initialization implements DAO<Grade>{
+
+	public GradeDAO()
+	{
+		super();
+	}
+	
+	@Override
+	public List<Grade> getALL() {
+		List<Grade> li = new ArrayList<>();
+		StringBuilder sql = new StringBuilder();
+		sql.append("select * from tblgrade");
+		try
+		{
+			PreparedStatement pre = this.getCon().prepareStatement(sql.toString());
+			ResultSet rs = pre.executeQuery();
+			while(rs.next())
+			{
+				Grade x = new Grade
+				(
+					rs.getInt("grade_ID"),
+					rs.getInt("class_ID"),
+					rs.getInt("student_ID"),
+					rs.getInt("course_ID"),
+					rs.getFloat("tx1"),
+					rs.getFloat("tx2"),
+					rs.getFloat("exam_Score"),
+					rs.getString("letter_Score")
+				);
+				li.add(x);
+			}
+		}
+		catch(SQLException e)
+		{
+			e.printStackTrace();
+		}
+		return li;
+	}
+
+	@Override
+	public boolean add(Grade t) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean update(Grade t) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean delete(int id) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

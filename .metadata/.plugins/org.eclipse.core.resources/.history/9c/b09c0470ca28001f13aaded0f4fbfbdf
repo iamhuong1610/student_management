@@ -1,0 +1,12 @@
+package Model;
+
+public class Grade {
+	private int grade_ID; 
+	private int class_ID;
+	private int student_ID; 
+	private int course_ID;
+	private float tx1;
+	private float tx2;
+	private float exam_Score;
+	private String letter_Score;
+}

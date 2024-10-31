@@ -1,0 +1,18 @@
+package Test;
+
+import java.util.List;
+
+import DAO.GradeDAO;
+import Model.Grade;
+
+public class GradeTest {
+
+	public static void main(String[] args) {
+		GradeDAO x = new GradeDAO();
+		List<Grade> li = x.getALL();
+		li.forEach(g -> System.out.println(g));
+		
+		Grade moi = new Grade()
+	}
+
+}

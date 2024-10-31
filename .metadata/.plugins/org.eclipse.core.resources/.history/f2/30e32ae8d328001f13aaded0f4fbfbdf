@@ -1,0 +1,56 @@
+package Test;
+
+import java.util.List;
+
+import DAO.GradeDAO;
+import Model.Grade;
+
+public class GradeTest {
+	
+	static GradeDAO x = new GradeDAO();
+	
+	public static void main(String[] args) {
+		
+		
+		
+	}
+	
+	public static void display()
+	{
+		List<Grade> li = x.getALL();
+		li.forEach(g -> System.out.println(g));
+	}
+	
+	public static void add()
+	{
+		Grade moi = new Grade(101,22,10,34,8,8,8,"B+");
+		if(x.add(moi))
+		{
+			System.out.println("Them thanh cong");
+			display();
+		}
+		else System.out.println("Them that bai");
+	}
+	
+	public static void update()
+	{
+		Grade moi = new Grade(101,22,10,34,8,8,8,"B+");
+		if(x.add(moi))
+		{
+			System.out.println("Them thanh cong");
+			display();
+		}
+		else System.out.println("Them that bai");
+	}
+	
+	public static void add()
+	{
+		Grade moi = new Grade(101,22,10,34,8,8,8,"B+");
+		if(x.add(moi))
+		{
+			System.out.println("Them thanh cong");
+			display();
+		}
+		else System.out.println("Them that bai");
+	}
+}

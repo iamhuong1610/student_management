@@ -1,0 +1,2 @@
+INDEX VERSION 1.4+C:\Users\TQKhanh\Desktop\BTL_javaweb\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1586634433.index

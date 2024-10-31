@@ -1,0 +1,40 @@
+package DAO;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import Model.Grade;
+
+public class GradeDAO extends Initialization implements DAO<Grade>{
+
+	public GradeDAO()
+	{
+		super();
+	}
+	
+	@Override
+	public List<Grade> getALL() {
+		List<Grade> li = new ArrayList<>();
+		
+		return null;
+	}
+
+	@Override
+	public boolean add(Grade t) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean update(Grade t) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean delete(int id) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

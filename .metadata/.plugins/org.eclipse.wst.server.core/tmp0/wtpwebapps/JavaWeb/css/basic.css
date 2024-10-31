@@ -1,0 +1,26 @@
+﻿
+/*Các xử lý định đạng cho body*/
+body{
+	background: #fcfcfc;
+	color: #444;
+	font-family: arial;
+	font-size: 16px;
+}
+.view{
+	width: 100%;
+	height: auto;
+	/*
+	border-width: 20px;
+	border-style: inset;
+	border-color: blue; */
+	
+	border-top: 5px solid blue;
+	border-bottom: 5px solid orange;
+	
+	box-shadow: 20px 15px 20px rgba(255,255,255,0.5);
+	
+	border-radius: 0 20% 0 20%;
+}
+.bg-full{
+	background: url('../img/bg.png') bottom center;
+}

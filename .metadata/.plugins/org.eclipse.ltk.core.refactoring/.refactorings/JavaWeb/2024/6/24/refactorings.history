@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;ConnectionPoolImpl.java&apos; to &apos;BTL_QLSV_JavaWeb/src/main/java/Implements&apos;&#x0D;&#x0A;- Original project: &apos;JavaWeb&apos;&#x0D;&#x0A;- Destination element: &apos;BTL_QLSV_JavaWeb/src/main/java/Implements&apos;&#x0D;&#x0A;- Original element: &apos;util.ConnectionPoolImpl.java&apos;" description="Copy compilation unit" destination="=BTL_QLSV_JavaWeb/src\/main\/java&lt;Implements" element1="/src\/main\/java&lt;util{ConnectionPoolImpl.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1718203808962" units="1" version="1.0"/>
+</session>
